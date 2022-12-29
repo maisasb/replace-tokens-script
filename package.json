@@ -2,5 +2,8 @@
   "name": "replace-tokens",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "replace": "node ./src/index.js"
+  }
 }

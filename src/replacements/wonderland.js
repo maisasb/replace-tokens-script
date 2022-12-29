@@ -1,20 +1,3 @@
-/**
- * Replacement function
- * Replace the old tokens for new one
- * @param {String} data - the file string
- * @returns String - file
- */
-const replaceToken = (data) => {
-  // data = data.replace(/--color-shade-medium/g, "--gl-color-shades-gray-20");
-
-  //Replace global colors DS 1.0 for DS 2.2
-  // data = data.replaceAll(/--color-shades-/g, "--gl-color-shades-");
-
-  data = replaceWonderland(data);
-
-  return data;
-};
-
 const replaceWonderland = (data) => {
   // wonderland
   // OLD 1.4.3 v1 latest                                  # NEW v2.2.0
@@ -95,4 +78,4 @@ const replaceWonderland = (data) => {
   return data;
 };
 
-module.exports = { replaceToken };
+module.exports = { replaceWonderland };
