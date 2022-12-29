@@ -153,7 +153,7 @@ const replaceOldColorTokens = (data) => {
   );
   data = data.replaceAll(
     /--color-surface-background-medium/g,
-    "--sys-color-surface-background-medium"
+    "--sys-color-surface-background-default"
   );
   data = data.replaceAll(
     /--color-surface-background-dark/g,
