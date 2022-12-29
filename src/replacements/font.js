@@ -5,25 +5,37 @@ const replaceFontFamily = (data) => {
 };
 
 const replaceFontSize = (data) => {
-  data = data.replaceAll(/--font-size-xxxs/g, "--gl-font-size-xxxs");
-  data = data.replaceAll(/--font-size-xxs/g, "--gl-font-size-xxs");
-  data = data.replaceAll(/--font-size-xs/g, "--gl-font-size-xs");
-  data = data.replaceAll(/--font-size-sm/g, "--gl-font-size-sm");
-  data = data.replaceAll(/--font-size-md/g, "--gl-font-size-md");
-  data = data.replaceAll(/--font-size-lg/g, "--gl-font-size-lg");
-  data = data.replaceAll(/--font-size-xl/g, "--gl-font-size-xl");
-  data = data.replaceAll(/--font-size-xxl/g, "--gl-font-size-xxl");
-  data = data.replaceAll(/--font-size-xxxl/g, "--gl-font-size-xxxl");
-  data = data.replaceAll(/--font-size-display/g, "--gl-font-size-dmd");
-  data = data.replaceAll(/--font-size-xx-small/g, "--gl-font-size-xxxs");
-  data = data.replaceAll(/--font-size-x-small/g, "--gl-font-size-xxxs");
-  // data = data.replaceAll(/--font-size-small/g, "--gl-font-size-xxs");
-  data = data.replaceAll(/--font-size-medium/g, "--gl-font-size-xs");
-  data = data.replaceAll(/--font-size-large/g, "--gl-font-size-md");
-  data = data.replaceAll(/--font-size-x-large/g, "--gl-font-size-xl");
-  data = data.replaceAll(/--font-size-xx-large/g, "--gl-font-size-xxl");
-  data = data.replaceAll(/--font-size-xxx-large/g, "--gl-font-size-xxxl");
-  data = data.replaceAll(/--font-size-bulky/g, "--gl-font-size-dmd");
+  data = data.replaceAll("var(--font-size-xxxs)", "var(--gl-font-size-xxxs)");
+  data = data.replaceAll("var(--font-size-xxs)", "var(--gl-font-size-xxs)");
+  data = data.replaceAll("var(--font-size-xs)", "var(--gl-font-size-xs)");
+  data = data.replaceAll("var(--font-size-sm)", "var(--gl-font-size-sm)");
+  data = data.replaceAll("var(--font-size-md)", "var(--gl-font-size-md)");
+  data = data.replaceAll("var(--font-size-lg)", "var(--gl-font-size-lg)");
+  data = data.replaceAll("var(--font-size-xl)", "var(--gl-font-size-xl)");
+  data = data.replaceAll("var(--font-size-xxl)", "var(--gl-font-size-xxl)");
+  data = data.replaceAll("var(--font-size-xxxl)", "var(--gl-font-size-xxxl)");
+  data = data.replaceAll("var(--font-size-display)", "var(--gl-font-size-dmd)");
+  data = data.replaceAll(
+    "var(--font-size-xx-small)",
+    "var(--gl-font-size-xxxs)"
+  );
+  data = data.replaceAll(
+    "var(--font-size-x-small)",
+    "var(--gl-font-size-xxxs)"
+  );
+  data = data.replaceAll("var(--font-size-small)", "var(--gl-font-size-xxs)");
+  data = data.replaceAll("var(--font-size-medium)", "var(--gl-font-size-xs)");
+  data = data.replaceAll("var(--font-size-large)", "var(--gl-font-size-md)");
+  data = data.replaceAll("var(--font-size-x-large)", "var(--gl-font-size-xl)");
+  data = data.replaceAll(
+    "var(--font-size-xx-large)",
+    "var(--gl-font-size-xxl)"
+  );
+  data = data.replaceAll(
+    "var(--font-size-xxx-large)",
+    "var(--gl-font-size-xxxl)"
+  );
+  data = data.replaceAll("var(--font-size-bulky)", "var(--gl-font-size-dmd)");
 
   return data;
 };
