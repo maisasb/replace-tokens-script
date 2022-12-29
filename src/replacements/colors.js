@@ -47,19 +47,19 @@ const replaceOldColorTokens = (data) => {
   );
   data = data.replaceAll(
     /--color-text-primary-ondark/g,
-    "--sys-color-content-primary"
+    "--gl-color-shades-gray-00"
   );
   data = data.replaceAll(
     /--color-text-secondary-ondark/g,
-    "--sys-color-content-secondary"
+    "--gl-color-shades-gray-20"
   );
   data = data.replaceAll(
     /--color-text-tertiary-ondark/g,
-    "--sys-color-content-tertiary"
+    "--gl-color-shades-gray-30"
   );
   data = data.replaceAll(
     /--color-text-placeholder-ondark/g,
-    "--sys-color-content-placeholder"
+    "--gl-color-shades-gray-70"
   );
 
   //Icon colors
