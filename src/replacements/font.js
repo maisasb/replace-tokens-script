@@ -17,7 +17,7 @@ const replaceFontSize = (data) => {
   data = data.replaceAll(/--font-size-display/g, "--gl-font-size-dmd");
   data = data.replaceAll(/--font-size-xx-small/g, "--gl-font-size-xxxs");
   data = data.replaceAll(/--font-size-x-small/g, "--gl-font-size-xxxs");
-  data = data.replaceAll(/--font-size-small/g, "--gl-font-size-xxs");
+  // data = data.replaceAll(/--font-size-small/g, "--gl-font-size-xxs");
   data = data.replaceAll(/--font-size-medium/g, "--gl-font-size-xs");
   data = data.replaceAll(/--font-size-large/g, "--gl-font-size-md");
   data = data.replaceAll(/--font-size-x-large/g, "--gl-font-size-xl");
