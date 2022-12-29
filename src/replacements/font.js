@@ -1,4 +1,4 @@
-const replaceFontFamily = (dats) => {
+const replaceFontFamily = (data) => {
   data = data.replaceAll(/--font-family-primary/g, "--gl-font-family-base");
 
   return data;
