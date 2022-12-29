@@ -200,7 +200,49 @@ const replaceOldColorTokens = (data) => {
     "--sys-color-stroke-active-variant"
   );
 
-  // data = data.replaceAll(//g, "");
+  data = data.replaceAll(
+    /--color-text-highlight-onlight/g,
+    "--sys-color-content-active"
+  );
+  data = data.replaceAll(
+    /--color-support-information/g,
+    "--gl-color-shades-blue-50"
+  );
+  data = data.replaceAll(
+    /--color-support-error/g,
+    "--sys-color-surface-container-error"
+  );
+  data = data.replaceAll(
+    /--color-support-alert/g,
+    "--gl-color-shades-yellow-60"
+  );
+  data = data.replaceAll(
+    /--color-support-success/g,
+    "--sys-color-surface-container-success"
+  );
+
+  //HP colors
+  //TODO
+  /*
+  data = data.replaceAll(/--color-hp-doctor-high/g, "");
+  data = data.replaceAll(/--color-hp-doctor-low/g, "");
+  data = data.replaceAll(/--color-hp-health-high/g, "");
+  data = data.replaceAll(/--color-hp-health-low/g, "");
+  data = data.replaceAll(/--color-hp-sleep-high/g, "");
+  data = data.replaceAll(/--color-hp-sleep-low/g, "");
+  data = data.replaceAll(/--color-hp-mind-high/g, "");
+  data = data.replaceAll(/--color-hp-mind-low/g, "");
+  data = data.replaceAll(/--color-hp-appointment-high/g, "");
+  data = data.replaceAll(/--color-hp-appointment-low/g, "");
+  data = data.replaceAll(/--color-hp-personal-care-high/g, "");
+  data = data.replaceAll(/--color-hp-personal-care-low/g, "");
+  data = data.replaceAll(/--color-hp-sport-high/g, "");
+  data = data.replaceAll(/--color-hp-sport-low/g, "");
+  data = data.replaceAll(/--color-hp-drugs-high/g, "");
+  data = data.replaceAll(/--color-hp-drugs-low/g, "");
+  data = data.replaceAll(/--color-hp-food-high/g, "");
+  data = data.replaceAll(/--color-hp-food-low/g, "");
+  */
 
   return data;
 };

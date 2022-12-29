@@ -3,6 +3,14 @@ const {
   replaceBorderWidth,
 } = require("./replacements/border");
 const { replaceOldColorTokens } = require("./replacements/colors");
+const {
+  replaceFontFamily,
+  replaceTextTransform,
+  replaceLetterSpacing,
+  replaceLineHeight,
+  replaceFontWeight,
+  replaceFontSize,
+} = require("./replacements/font");
 const { replaceOpacity } = require("./replacements/opacity");
 const { replaceShadow } = require("./replacements/shadow");
 const { replaceSpacing } = require("./replacements/spacing");
@@ -22,6 +30,12 @@ const replaceToken = (data) => {
   data = replaceBorderWidth(data);
   data = replaceShadow(data);
   data = replaceOpacity(data);
+  data = replaceFontFamily(data);
+  data = replaceTextTransform(data);
+  data = replaceLetterSpacing(data);
+  data = replaceLineHeight(data);
+  data = replaceFontWeight(data);
+  data = replaceFontSize(data);
 
   return data;
 };

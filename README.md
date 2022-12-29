@@ -35,7 +35,13 @@ OLD 1.4.3 v1 latest => NEW v2.2.0
 
 --gl-border-radius-circle => deleted
 
-DS v1 - colors
+DS v1
+
+- colors
+- borders
+- opacity
+- shadow
+- font (letter-spacing, size, text-transform, weight)
 
 **Tokens that will NOT be replaced**
 
