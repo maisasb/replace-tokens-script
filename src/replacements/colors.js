@@ -146,6 +146,60 @@ const replaceOldColorTokens = (data) => {
   data = data.replaceAll(/--color-shade-darkest/g, "--gl-color-shades-gray-90");
   data = data.replaceAll(/--color-shade-black/g, "--gl-color-shades-gray-100");
 
+  //Surface colors
+  data = data.replaceAll(
+    /--color-surface-background-default/g,
+    "--sys-color-surface-background-light"
+  );
+  data = data.replaceAll(
+    /--color-surface-background-medium/g,
+    "--sys-color-surface-background-medium"
+  );
+  data = data.replaceAll(
+    /--color-surface-background-dark/g,
+    "--sys-color-surface-background-dark"
+  );
+  data = data.replaceAll(
+    /--color-surface-background-alternative/g,
+    "--sys-color-surface-background-brand"
+  );
+  data = data.replaceAll(
+    /--color-surface-background-overlay/g,
+    "--sys-color-surface-background-overlay"
+  );
+  data = data.replaceAll(
+    /--color-surface-action-hover/g,
+    "--sys-color-surface-container-hover"
+  );
+  data = data.replaceAll(
+    /--color-surface-action-primary/g,
+    "--sys-color-surface-container-active-variant"
+  );
+  data = data.replaceAll(
+    /--color-surface-action-secondary/g,
+    "--gl-color-shades-gray-100"
+  );
+  data = data.replaceAll(
+    /--color-surface-action-disabled/g,
+    "--sys-color-surface-container-disabled-dark"
+  );
+  data = data.replaceAll(
+    /--color-surface-stroke-default/g,
+    "--sys-color-stroke-idle"
+  );
+  data = data.replaceAll(
+    /--color-surface-stroke-light/g,
+    "--sys-color-stroke-active"
+  );
+  data = data.replaceAll(
+    /--color-surface-stroke-dark/g,
+    "--gl-color-shades-gray-100"
+  );
+  data = data.replaceAll(
+    /--color-surface-stroke-alternative/g,
+    "--sys-color-stroke-active-variant"
+  );
+
   // data = data.replaceAll(//g, "");
 
   return data;
