@@ -5,6 +5,8 @@ const { promisify } = require("util");
 const readdir = promisify(fs.readdir);
 const { replaceToken } = require("./replacements");
 
+const filesExtension = [".vue", ".css", ".scss"];
+
 /**
  * Get all Vue paths from files in given directory
  * @param {String} dir - the project directory
@@ -18,7 +20,7 @@ const readdirRecursive = async (dir) => {
 
     if (file.isDirectory()) return await readdirRecursive(path);
 
-    return path.includes(".vue") ? path : null;
+    return pathReplaceble(path);
   });
   return (await Promise.all(paths)).flat(Infinity).filter(Boolean);
 };
@@ -45,6 +47,15 @@ const replaceInFile = async (dir) => {
       });
     });
   }
+};
+
+const pathReplaceble = (path) => {
+  for (const ext of filesExtension) {
+    if (path.includes(ext)) {
+      return path;
+    }
+  }
+  return null;
 };
 
 if (!argv[2]) {
