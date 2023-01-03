@@ -53,6 +53,11 @@ const replaceFontWeight = (data) => {
     /--font-weight-semibold/g,
     "--gl-font-weight-semibold"
   );
+  data = data.replaceAll("var(--font-normal)", "var(--gl-font-weight-regular)");
+  data = data.replaceAll(
+    "var(--font-weightregular)",
+    "var(--gl-font-weight-regular)"
+  );
   return data;
 };
 
@@ -79,6 +84,7 @@ const replaceLetterSpacing = (data) => {
     /--letter-spacing-medium/g,
     " --gl-letter-spacing-rule-03"
   );
+
   return data;
 };
 

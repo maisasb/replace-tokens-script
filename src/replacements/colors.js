@@ -255,6 +255,21 @@ const replaceOldColorTokens = (data) => {
     "var(--gl-color-shades-magenta-70)"
   );
 
+  data = data.replaceAll(
+    "var(--color-pillars-active)",
+    "var(--gl-color-shades-yellow-40)"
+  );
+
+  data = data.replaceAll(
+    "var(--color-pillars-food)",
+    "var(--sys-color-surface-container-success)"
+  );
+
+  data = data.replaceAll(
+    "var(--color-pillars-mind)",
+    "var(--gl-color-shades-blue-20)"
+  );
+
   return data;
 };
 
