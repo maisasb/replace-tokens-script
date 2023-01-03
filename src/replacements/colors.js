@@ -142,8 +142,14 @@ const replaceOldColorTokens = (data) => {
     /--color-shade-semi-dark/g,
     "--gl-color-shades-gray-40"
   );
-  data = data.replaceAll(/--color-shade-dark/g, "--gl-color-shades-gray-60");
-  data = data.replaceAll(/--color-shade-darkest/g, "--gl-color-shades-gray-90");
+  data = data.replaceAll(
+    "var(--color-shade-dark)",
+    "var(--gl-color-shades-gray-60)"
+  );
+  data = data.replaceAll(
+    "var(--color-shade-darkest)",
+    "var(--gl-color-shades-gray-90)"
+  );
   data = data.replaceAll(/--color-shade-black/g, "--gl-color-shades-gray-100");
 
   //Surface colors

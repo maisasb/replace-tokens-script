@@ -3,6 +3,7 @@ const {
   replaceBorderWidth,
 } = require("./replacements/border");
 const { replaceOldColorTokens } = require("./replacements/colors");
+const { replaceCoreCss } = require("./replacements/core");
 const {
   replaceFontFamily,
   replaceTextTransform,
@@ -36,6 +37,7 @@ const replaceToken = (data) => {
   data = replaceLineHeight(data);
   data = replaceFontWeight(data);
   data = replaceFontSize(data);
+  data = replaceCoreCss(data);
 
   return data;
 };

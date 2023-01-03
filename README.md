@@ -18,6 +18,8 @@ Script to replace design system tokens in a project
 This script will iterate in the given folder and get all Vue paths, then it will iterate in paths replacing tokens for the new ones.
 The script will create a file.txt contain all the paths that were found
 
+- Tip: Run lint --fix after replacements to fix lint spacing
+
 ### Tokens that will replace
 
 Wonderland
