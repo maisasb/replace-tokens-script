@@ -191,7 +191,7 @@ const replaceOldColorTokens = (data) => {
   );
   data = data.replaceAll(
     /--color-surface-stroke-default/g,
-    "--sys-color-stroke-idle"
+    "--sys-color-stroke-active"
   );
   data = data.replaceAll(
     /--color-surface-stroke-light/g,
