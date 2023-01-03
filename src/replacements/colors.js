@@ -212,7 +212,7 @@ const replaceOldColorTokens = (data) => {
   );
   data = data.replaceAll(
     /--color-support-information/g,
-    "--gl-color-shades-blue-50"
+    "--gl-color-shades-blue-40"
   );
   data = data.replaceAll(
     /--color-support-error/g,
