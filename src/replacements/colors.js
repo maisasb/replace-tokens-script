@@ -250,6 +250,11 @@ const replaceOldColorTokens = (data) => {
   data = data.replaceAll(/--color-hp-food-low/g, "");
   */
 
+  data = data.replaceAll(
+    "var(--color-surface-chat-message)",
+    "var(--gl-color-shades-magenta-70)"
+  );
+
   return data;
 };
 
