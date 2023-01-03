@@ -228,27 +228,61 @@ const replaceOldColorTokens = (data) => {
   );
 
   //HP colors
-  //TODO
-  /*
-  data = data.replaceAll(/--color-hp-doctor-high/g, "");
-  data = data.replaceAll(/--color-hp-doctor-low/g, "");
-  data = data.replaceAll(/--color-hp-health-high/g, "");
-  data = data.replaceAll(/--color-hp-health-low/g, "");
-  data = data.replaceAll(/--color-hp-sleep-high/g, "");
-  data = data.replaceAll(/--color-hp-sleep-low/g, "");
-  data = data.replaceAll(/--color-hp-mind-high/g, "");
-  data = data.replaceAll(/--color-hp-mind-low/g, "");
-  data = data.replaceAll(/--color-hp-appointment-high/g, "");
-  data = data.replaceAll(/--color-hp-appointment-low/g, "");
-  data = data.replaceAll(/--color-hp-personal-care-high/g, "");
-  data = data.replaceAll(/--color-hp-personal-care-low/g, "");
-  data = data.replaceAll(/--color-hp-sport-high/g, "");
-  data = data.replaceAll(/--color-hp-sport-low/g, "");
-  data = data.replaceAll(/--color-hp-drugs-high/g, "");
-  data = data.replaceAll(/--color-hp-drugs-low/g, "");
-  data = data.replaceAll(/--color-hp-food-high/g, "");
-  data = data.replaceAll(/--color-hp-food-low/g, "");
-  */
+
+  data = data.replaceAll(/--color-hp-doctor-high/g, "--gl-color-shades-red-60");
+  data = data.replaceAll(/--color-hp-doctor-low/g, "--gl-color-shades-red-10");
+  data = data.replaceAll(
+    /--color-hp-health-high/g,
+    "--gl-color-shades-fuchsia-70"
+  );
+  data = data.replaceAll(
+    /--color-hp-health-low/g,
+    "--gl-color-shades-fuchsia-10"
+  );
+  data = data.replaceAll(
+    /--color-hp-sleep-high/g,
+    "--gl-color-shades-violet-80"
+  );
+  data = data.replaceAll(
+    /--color-hp-sleep-low/g,
+    "--gl-color-shades-violet-10"
+  );
+  data = data.replaceAll(/--color-hp-mind-high/g, "--gl-color-shades-blue-50");
+  data = data.replaceAll(/--color-hp-mind-low/g, "--gl-color-shades-blue-10");
+  data = data.replaceAll(
+    /--color-hp-appointment-high/g,
+    "--gl-color-shades-turquoise-80"
+  );
+  data = data.replaceAll(
+    /--color-hp-appointment-low/g,
+    "--gl-color-shades-turquoise-10"
+  );
+  data = data.replaceAll(
+    /--color-hp-personal-care-high/g,
+    "--gl-color-shades-lime-80"
+  );
+  data = data.replaceAll(
+    /--color-hp-personal-care-low/g,
+    "--gl-color-shades-lime-10"
+  );
+  data = data.replaceAll(
+    /--color-hp-sport-high/g,
+    "--gl-color-shades-yellow-60"
+  );
+  data = data.replaceAll(
+    /--color-hp-sport-low/g,
+    "--gl-color-shades-yellow-10"
+  );
+  data = data.replaceAll(
+    /--color-hp-drugs-high/g,
+    "--gl-color-shades-orange-80"
+  );
+  data = data.replaceAll(
+    /--color-hp-drugs-low/g,
+    "--gl-color-shades-orange-10"
+  );
+  data = data.replaceAll(/--color-hp-food-high/g, "--gl-color-shades-green-80");
+  data = data.replaceAll(/--color-hp-food-low/g, "--gl-color-shades-green-10");
 
   data = data.replaceAll(
     "var(--color-surface-chat-message)",
