@@ -42,4 +42,35 @@ const replaceToken = (data) => {
   return data;
 };
 
-module.exports = { replaceToken };
+/**
+ * Find all $emit() on vue file and create emits prop with found events
+ * @param {*} data
+ * @returns
+ */
+const declareEmits = (data) => {
+  if (data.includes("emits:")) {
+    return data;
+  }
+  const regex = /\$emit\('(.*?)'/g;
+  const result = findMatches(regex, data);
+  if (result?.length) {
+    const events = result.map((match) => {
+      return `'${match[1]}'`;
+    });
+    const uniqueEvents = new Set(events);
+    data = data.replace(
+      "export default {",
+      `export default { \n emits: [${new Array(...uniqueEvents).join(",")}],`
+    );
+  }
+
+  return data;
+};
+
+function findMatches(regex, str, matches = []) {
+  const res = regex.exec(str);
+  res && matches.push(res) && findMatches(regex, str, matches);
+  return matches;
+}
+
+module.exports = { replaceToken, declareEmits };
